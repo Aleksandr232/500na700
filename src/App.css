@@ -20,6 +20,24 @@
   --white: #fff;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
 .desktop {
   background-color: #0b0a0d;
   display: flex;
@@ -70,7 +88,7 @@
   line-height: normal;
   margin-top: -1px;
   position: relative;
-  width: fit-content;
+  
 }
 
 .desktop .frame-2 {
@@ -583,7 +601,7 @@
   letter-spacing: 0;
   line-height: 20px;
   position: absolute;
-  top: 164px;
+  top: 153px;
   width: 400px;
 }
 
@@ -671,6 +689,11 @@
   padding: 14px 20px 16px;
   position: absolute;
   top: 360px;
+  cursor: pointer;
+}
+
+.button-default:hover{
+  background: #75FF72;
 }
 
 .desktop .text-wrapper-20 {
