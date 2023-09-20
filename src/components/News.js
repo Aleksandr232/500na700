@@ -1,3 +1,4 @@
+import Carousel from 'react-elastic-carousel';
 
 import img from '../assets/img/unsplash-qw-qjru4ruy.png'
 import img1 from '../assets/img/unsplash-qw-qjru4ruy-2.png'
@@ -8,9 +9,12 @@ import img5 from '../assets/img/unsplash-qw-qjru4ruy-5.png'
 
 
 const News=()=>{
+  const images = [img, img1, img2, img3, img4, img5];
+
     return(
         <>
             <div className="text-wrapper-14">Новости</div>
+        <div className='news'> 
         <div className="element-5">
           <img className="unsplash-qw" alt="Unsplash qw" src={img} />
           <div className="frame-3">
@@ -64,6 +68,22 @@ const News=()=>{
               ОписаниОписание Описание&nbsp;&nbsp;Описание Описание Описание&nbsp;&nbsp;Описаниее
             </div>
           </div>
+        </div>
+        </div> 
+        <div className='carousel'>
+        <Carousel itemsToShow={1}>
+        {images.map((image, index) => (
+          <div className="item" key={index}>
+            <img className="unsplash-qw" alt="Unsplash qw" src={image} />
+            <div className="frame-3">
+              <div className="text-wrapper-15">Заголовок</div>
+              <div className="text-wrapper-16">
+                Описание Описание&nbsp;&nbsp;Описание Описание Описание&nbsp;&nbsp;Описаниее
+              </div>
+            </div>
+          </div>
+        ))}
+      </Carousel>
         </div>
         </>
     )

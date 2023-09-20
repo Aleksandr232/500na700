@@ -17,8 +17,7 @@ const Faq = ()=>{
 
 
     return(
-        <div className="overlap-2">
-          <div className="faq">
+        <div id="overlap-2" className="faq">
             <div className="text-wrapper-7">FAQ</div>
             <div className="line" alt="Line"  />
             <div onClick={() => showHandler(1)}   className="text-wrapper-8">Как добраться до музея?</div>
@@ -29,7 +28,7 @@ const Faq = ()=>{
                             «Станция метро «Кремлевская», а затем по направлению к Кремлю пройдя 5 минут пешком;
                         </p>
                 ) : null}
-            <div className='line-2' style={{ top: show1 ? 152 : 120 }} alt="Line" src="/img/line-55-1.svg" />
+            <div className='line-2' id="line2" style={{ top: show1 ? 152 : 120 }} alt="Line" src="/img/line-55-1.svg" />
             <div onClick={() => showHandler(2)} className="text-wrapper-9">Есть ли поблизости удобная парковка?</div>
                     {show2 ? (
                                 <p className="element-4">
@@ -46,7 +45,6 @@ const Faq = ()=>{
             
             <div style={{ top: show3 ? 365 : 362 }}  className="line-4" alt="Line" src="/img/line-55-1.svg" />
           </div>
-        </div>
     )
 }
 

@@ -5,6 +5,7 @@ import Faq from "./Faq";
 import News from "./News";
 import Subscribe from "./Subscribe";
 import Footer from "./Footer";
+import FaqMob from "./FaqMob";
 
 
 const Main=()=>{
@@ -14,6 +15,7 @@ const Main=()=>{
                     <Header/>
                     <Slider/>
                     <Faq/>
+                    <FaqMob/>
                     <News/>
                     <Subscribe/>
                     <Footer/>

@@ -208,7 +208,7 @@ a {
   width: 235px;
 }
 
-.desktop .overlap-2 {
+.desktop #overlap-2 {
   height: 363px;
   left: 100px;
   position: absolute;
@@ -339,13 +339,7 @@ a {
   background: #FFF;
 }
 
-/* .desktop .faq-2 {
-  height: 363px;
-  left: 252px;
-  position: absolute;
-  top: 0;
-  width: 996px;
-} */
+
 
 .desktop .text-wrapper-11 {
   color: var(--white);
@@ -529,6 +523,10 @@ a {
   position: absolute;
   top: 1685px;
   width: 400px;
+}
+
+.desktop .box_mob{
+  display: none;
 }
 
 .desktop .element-10 {
@@ -801,4 +799,344 @@ a {
   line-height: normal;
   position: absolute;
   top: 92px;
+}
+
+.desktop .img_mob{
+  display: none;
+}
+
+.desktop .carousel{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+   .desktop .div {
+    background-color: #0b0a0d;
+    width: 320px;
+    height: 3014px;
+    position: relative;
+  }
+
+  .desktop .carousel{
+    display: block;
+    position: relative;
+    top: 627px;
+  }
+
+  .desktop .news{
+    display: none;
+  }
+
+
+  .desktop .logo {
+    width: 42px;
+    height: 50px;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+  }
+
+  .b {
+    width: 36px;
+    height: 24px;
+    position: absolute;
+    top: 48px;
+    left: 269px;
+  }
+
+  .b .b-2 {
+    height: 24px;
+    position: relative;
+  }
+
+  .b .rectangle {
+    background-color: #fff;
+    width: 36px;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .b .rectangle-2 {
+    background-color: #fff;
+    width: 36px;
+    height: 3px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+  
+  .b  .rectangle-3 {
+    background-color: #fff;
+    width: 18px;
+    height: 3px;
+    position: absolute;
+    top: 21px;
+    left: 18px;
+  }
+
+  .desktop .slider{
+    border-radius: 6px;
+    width: 290px;
+    height: 450px;
+    position: absolute;
+    top: 150px;
+    left: 15px;
+    /* overflow-x: scroll; */
+  }
+
+  .desktop .btn{
+    width: 235px;
+    height: 40px;
+    position: absolute;
+    top: 620px;
+    left: 42px;
+  }
+
+  .desktop .img_desktop{
+    display: none;
+  }
+
+  .desktop #mob{
+    display: block;
+    object-fit: cover;
+  }
+
+  .slider img {
+    object-fit: cover;
+    position: absolute;
+    background-position: 50%;
+  }  
+
+  .desktop #overlap-2 {
+   /*  width: 292px;
+    height: 634px;
+    position: absolute;
+    top: 740px;
+    left: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    display: inline-flex; */
+    display: none;
+    
+}
+
+.desktop .frame2 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  display: inline-flex;
+  position: absolute;
+  top: 105px;
+  left: 0;
+}
+
+.desktop .text-wrapper-7 {
+  color: var(--white);
+  letter-spacing: -1.2px;
+  width: 290px;
+  font-family: "Mplus 1p-Medium", Helvetica;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 85px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.desktop .box_mob{
+  display: block;
+}
+
+.box_mob {
+  height: 634px;
+  position: relative;
+  width: 290px;
+}
+
+.box_mob .faq_mob {
+  height: 634px;
+  left: 25px;
+  position: absolute;
+  top: 671px;
+  width: 292px;
+}
+
+.box_mob .text-wrapper_mob {
+  color: #ffffff;
+  font-family: "Mplus 1p-Medium", Helvetica;
+  font-size: 40px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: -1.2px;
+  line-height: 85px;
+  position: absolute;
+  top: 0;
+  width: 290px;
+}
+
+.box_mob .frame_mob {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 0;
+  position: absolute;
+  top: 105px;
+}
+
+.box_mob .line_mob {
+  height: 1px;
+  margin-top: -1px;
+  object-fit: cover;
+  position: relative;
+  width: 290px;
+}
+
+.box_mob .div_mob {
+  color: #ffffff;
+  font-family: "M PLUS 1-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 35px;
+  position: relative;
+  width: 290px;
+}
+
+.box_mob .element_mob {
+  color: #ffffff;
+  font-family: "Mplus 1p-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 290px;
+}
+
+.box_mob .img_mob {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 290px;
+}
+
+.desktop .text-wrapper-14 {
+  color: var(--white);
+  letter-spacing: -1.2px;
+  white-space: nowrap;
+  font-family: "Mplus 1p-Medium", Helvetica;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 85px;
+  position: absolute;
+  top: 1149px;
+  left: 11px;
+}
+
+.desktop .view-2 {
+  background-color: #fff;
+  width: 320px;
+  height: 525px;
+  position: absolute;
+  top: 1727px;
+  left: 0;
+}  
+
+.desktop .text-wrapper-17 {
+  color: #0b0a0d;
+  letter-spacing: -1.2px;
+  white-space: nowrap;
+  font-family: "Mplus 1p-Medium", Helvetica;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 85px;
+  position: absolute;
+  top: 29px;
+  left: 11px;
+}  
+
+.desktop .text-wrapper-18 {
+  color: #0b0a0d;
+  letter-spacing: 0;
+  width: 275px;
+  font-family: "Mplus 1p-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  position: absolute;
+  top: 134px;
+  left: 15px;
+}
+
+.desktop .input-default {
+  width: 90%;
+  left: 16px;
+}
+
+.desktop .input-default-2 {
+  width: 90%;
+  left: 16px;
+  top: 277px;
+}
+
+.desktop .input-default-4 {
+  width: 90%;
+  left: 16px;
+  top: 394px;
+}
+
+.desktop .input-default-3 {
+  width: 90%;
+  left: 16px;
+  top: 335px;
+}
+
+.desktop .button-default {
+  left: 17px;
+  position: absolute;
+  top: 449px;
+  
+}
+
+.desktop .footer {
+  background-color: #312f35;
+  width: 320px;
+  height: 438px;
+  position: absolute;
+  top: 2253px;
+  left: 0;
+}
+
+.desktop .text-wrapper-15 {
+  position: relative;
+  left: -73px;
+  top: 80px;
+}
+
+.desktop  .text-wrapper-16 {
+  position: relative;
+  top: 85px;
+  left: -73px;
+  width: 274px;
+}
+
+.desktop .text-wrapper-21 {
+  top: 76px;
+  left: -73px;
+}
+
+.desktop .frame-4 {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  display: inline-flex;
+  position: absolute;
+  top: 286px;
+  left: 59px;
+}
+
 }

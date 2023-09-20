@@ -3,23 +3,28 @@ import { useState } from 'react';
 import img1 from '../assets/img/img-1.png';
 import img2 from '../assets/img/img-2.png';
 import img3 from '../assets/img/img-3.png';
+import mob1 from '../assets/img/mob-1.png';
+import mob2 from '../assets/img/mob-2.png';
+import mob3 from '../assets/img/mob-3.png';
 
 const Slider = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [img1, img2, img3];
+  const img_mob = [mob2, mob1, mob3];
 
   const handlePrev = () => {
-    setCurrentImage((currentImage - 1 + images.length) % images.length);
+    setCurrentImage((currentImage - 1 + (images || img_mob).length) % images.length);
   };
 
   const handleNext = () => {
-    setCurrentImage((currentImage + 1) % images.length);
+    setCurrentImage((currentImage + 1) % ((images || img_mob).length));
   };
 
   return (
     <>
     <div className='slider'>
-      <img src={images[currentImage]} alt="Изображение слайдера" />
+      <img id='desktop' className='img_desktop' src={images[currentImage]} alt="Изображение слайдера" />
+      <img id='mob' className='img_mob' src={img_mob[currentImage]} alt="Изображение слайдера" />
     </div>
     <div className='btn'>
       <svg xmlns="http://www.w3.org/2000/svg" width="236" height="40" viewBox="0 0 236 40" fill="none">

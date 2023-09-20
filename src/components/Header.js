@@ -10,7 +10,14 @@ const Header = () => {
         };
 
     return(
-        <>
+        <>  
+            <div className="b">
+                    <div className="b-2">
+                    <div className="rectangle" />
+                    <div className="rectangle-2" />
+                    <div className="rectangle-3" />
+            </div>
+            </div>
             <Menu isOpen={isOpen}/>
             <svg className="logo" xmlns="http://www.w3.org/2000/svg" width="42" height="50" viewBox="0 0 42 50" fill="none">
                 <g clip-path="url(#clip0_14_18)">
