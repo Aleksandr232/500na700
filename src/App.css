@@ -1210,5 +1210,9 @@ body.no-scroll {
   display: none;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 
 }
