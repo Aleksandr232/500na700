@@ -341,6 +341,20 @@ a {
   background: #FFF;
 }
 
+.close{
+  /* position: absolute;
+  top: 41px;
+  left: 263px; */
+  display: none;
+}
+
+.burger{
+ /*  position: absolute;
+  top: 41px;
+  left: 263px; */
+  display: none;
+}
+
 
 
 .desktop .text-wrapper-11 {
@@ -1167,6 +1181,33 @@ a {
 
 body.no-scroll {
   overflow: hidden;
+}
+
+.label .text-wrapper {
+  left: 100px;
+  
+}
+
+.text-wrapper1 {
+  left: 100px;
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 41px;
+    left: 263px;
+}
+
+.burger{
+    display: block;
+    position: absolute;
+    top: 41px;
+    left: 263px;
+}
+
+.desktop .frame{
+  display: none;
 }
 
 

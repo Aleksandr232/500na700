@@ -2,14 +2,22 @@ import { useEffect } from "react";
 
 const Menu = ({ isOpen}) => {
     useEffect(() => {
+        const disableScroll = () => {
+          document.body.style.overflow = "hidden";
+        };
+    
+        const enableScroll = () => {
+          document.body.style.overflow = "auto";
+        };
+    
         if (isOpen) {
-          document.body.classList.add('no-scroll');
+          disableScroll();
         } else {
-          document.body.classList.remove('no-scroll');
+          enableScroll();
         }
-        
+    
         return () => {
-          document.body.classList.remove('no-scroll');
+          enableScroll();
         };
       }, [isOpen]);
 

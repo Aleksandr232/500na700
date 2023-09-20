@@ -4,20 +4,27 @@ import Menu from './Menu';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [open, setOpen] = useState(true);
 
         const toggleMenu = () => {
             setIsOpen(!isOpen);
+            setOpen(!open);
         };
 
     return(
         <>  
-            <div onClick={toggleMenu} className="b">
-                    <div className="b-2">
-                    <div className="rectangle" />
-                    <div className="rectangle-2" />
-                    <div className="rectangle-3" />
-            </div>
-            </div>
+            {open ? (<div className='burger' onClick={toggleMenu}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 36 24" fill="none">
+                    <rect width="36" height="3" fill="white"/>
+                    <rect y="10.5" width="36" height="3" fill="white"/>
+                    <rect x="18" y="21" width="18" height="3" fill="white"/>
+                </svg>
+            </div>) : (<div className='close' onClick={toggleMenu}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" viewBox="0 0 28 29" fill="none">
+                    <rect x="2.125" y="0.455811" width="36" height="3" transform="rotate(45 2.125 0.455811)" fill="white"/>
+                    <rect y="25.4558" width="36" height="3" transform="rotate(-45 0 25.4558)" fill="white"/>
+                </svg>
+            </div>)}
             <Menu isOpen={isOpen}/>
             <svg className="logo" xmlns="http://www.w3.org/2000/svg" width="42" height="50" viewBox="0 0 42 50" fill="none">
                 <g clip-path="url(#clip0_14_18)">
