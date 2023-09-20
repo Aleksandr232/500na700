@@ -11,7 +11,7 @@ const Header = () => {
 
     return(
         <>  
-            <div className="b">
+            <div onClick={toggleMenu} className="b">
                     <div className="b-2">
                     <div className="rectangle" />
                     <div className="rectangle-2" />

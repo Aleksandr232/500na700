@@ -20,6 +20,8 @@
   --white: #fff;
 }
 
+
+
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
@@ -1138,5 +1140,34 @@ a {
   top: 286px;
   left: 59px;
 }
+
+.box {
+  height: 644px;
+  width: 250px;
+}
+
+.box .menu-bg {
+  background-color: #0b0a0d;
+  height: 503px;
+  position: absolute;
+  width: 256px;
+  top: 146px;
+  left: 63px;
+}
+
+.overlay {
+  background-color: #00000066;
+  height: 2795px;
+  left: 0;
+  position: absolute;
+  top: 134px;
+  width: 320px;
+  z-index: 1;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
 
 }
