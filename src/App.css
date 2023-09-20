@@ -726,9 +726,8 @@ a {
   flex-direction: column;
   gap: 10px;
   left: 100px;
-  position: absolute;
   top: 50px;
-  width: 400px;
+  padding: 10px 98px;
 }
 
 .desktop .frame-6 {
@@ -739,7 +738,6 @@ a {
   left: 100px;
   position: absolute;
   top: 151px;
-  width: 400px;
 }
 
 .desktop .text-wrapper-21 {
