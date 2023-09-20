@@ -813,14 +813,14 @@ a {
    .desktop .div {
     background-color: #0b0a0d;
     width: 320px;
-    height: 3014px;
+    height: 2915px;
     position: relative;
   }
 
   .desktop .carousel{
     display: block;
     position: relative;
-    top: 627px;
+    top: 866px;
   }
 
   .desktop .news{
@@ -1033,7 +1033,7 @@ a {
   font-weight: 500;
   line-height: 85px;
   position: absolute;
-  top: 1149px;
+  top: 1307px;
   left: 11px;
 }
 
@@ -1042,7 +1042,7 @@ a {
   width: 320px;
   height: 525px;
   position: absolute;
-  top: 1727px;
+  top: 1949px;
   left: 0;
 }  
 
@@ -1107,7 +1107,7 @@ a {
   width: 320px;
   height: 438px;
   position: absolute;
-  top: 2253px;
+  top: 2476px;
   left: 0;
 }
 
