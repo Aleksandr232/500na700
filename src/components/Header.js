@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from 'react';
+import Menu from './Menu';
 
 
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+        const toggleMenu = () => {
+            setIsOpen(!isOpen);
+        };
+
     return(
         <>
+            <Menu isOpen={isOpen}/>
             <svg className="logo" xmlns="http://www.w3.org/2000/svg" width="42" height="50" viewBox="0 0 42 50" fill="none">
                 <g clip-path="url(#clip0_14_18)">
                 <path d="M39.8465 32.484C40.0286 32.5602 40.2108 32.5983 40.3929 32.5983C40.6842 32.5983 40.9392 32.5221 41.1213 32.3315C41.3034 32.1408 41.4491 31.8739 41.522 31.5308C41.5948 31.1876 41.6676 30.7682 41.6676 30.3107V15.1363C41.6676 14.6788 41.6312 14.2212 41.522 13.7637C41.4491 13.3062 41.3034 12.8868 41.1213 12.4674C40.9392 12.0481 40.6842 11.6668 40.3929 11.3236C40.1015 10.9805 39.7373 10.6755 39.3366 10.4086L38.2076 9.72231C37.8069 9.4554 37.4427 9.34106 37.1513 9.34106C36.86 9.34106 36.605 9.41731 36.4229 9.6079C36.2408 9.79856 36.095 10.0655 36.0222 10.4086C35.9494 10.7517 35.8765 11.1711 35.8765 11.6286V26.8412C35.8765 27.2987 35.913 27.7562 36.0222 28.2137C36.095 28.6713 36.2408 29.0906 36.4229 29.5101C36.605 29.9295 36.86 30.3107 37.1513 30.6539C37.4063 30.9589 37.6976 31.2258 38.0255 31.4546L36.2044 30.387L10.0898 42.5494L12.348 43.8838L17.4835 41.52L22.9468 44.7607L18.9404 47.8109L21.2714 49.1835L41.6676 33.5515L39.8465 32.484ZM24.5493 43.4263L19.5595 40.4525L36.0586 32.7508L37.8798 33.8184L24.5493 43.4263ZM39.3366 29.8532L38.2076 29.1669C37.9526 29.0144 37.8069 28.8238 37.6976 28.5569C37.5884 28.3281 37.552 28.0612 37.552 27.8325V12.5818C37.552 12.3531 37.5884 12.1624 37.6976 12.0099C37.8069 11.8956 37.9526 11.8956 38.2076 12.0481L39.3366 12.7343C39.5551 12.8868 39.7373 13.0775 39.8465 13.3062C39.9558 13.5731 39.9922 13.8019 39.9922 14.0306V29.2431C39.9922 29.472 39.9558 29.6626 39.8465 29.8151C39.7009 30.0057 39.5551 29.9676 39.3366 29.8532Z" fill="#76FF6A"/>
@@ -18,22 +26,22 @@ const Header = () => {
             <div className="frame">
             <div className="view">
                 <div className="div-wrapper">
-                <div className="text-wrapper">Пункт 1</div>
+                <div onClick={toggleMenu} className="text-wrapper">Пункт 1</div>
                 </div>
             </div>
             <div className="view">
                 <div className="frame-2">
-                <div className="text-wrapper">Пункт 2</div>
+                <div onClick={toggleMenu} className="text-wrapper">Пункт 2</div>
                 </div>
             </div>
             <div className="div-wrapper">
-                <div className="text-wrapper">Пункт 3</div>
+                <div onClick={toggleMenu} className="text-wrapper">Пункт 3</div>
             </div>
             <div className="div-wrapper">
-                <div className="text-wrapper">Пункт 4</div>
+                <div  onClick={toggleMenu} className="text-wrapper">Пункт 4</div>
             </div>
             <div className="div-wrapper">
-                <div className="text-wrapper-2">Пункт 5</div>
+                <div onClick={toggleMenu} className="text-wrapper-2">Пункт 5</div>
             </div>
             </div>
         </>

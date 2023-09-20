@@ -88,7 +88,30 @@ a {
   line-height: normal;
   margin-top: -1px;
   position: relative;
+  cursor: pointer;
   
+}
+
+.desktop .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden; /* скрыть часть линии до начала анимации */
+}
+
+.desktop  .text-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transition: width 0.3s ease-in-out;
+}
+
+.desktop .text-wrapper:hover::after {
+  width: 100%; /* увеличиваем ширину линии до 100% */
+  background: #FFF;
 }
 
 .desktop .frame-2 {
@@ -115,6 +138,28 @@ a {
   cursor: pointer;
 }
 
+.desktop .text-wrapper-2 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden; /* скрыть часть линии до начала анимации */
+}
+
+.desktop  .text-wrapper-2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transition: width 0.3s ease-in-out;
+}
+
+.desktop .text-wrapper-2:hover::after {
+  width: 100%; /* увеличиваем ширину линии до 100% */
+  background: #FFF;
+}
+
 .desktop .slider {
   border-radius: 6px;
   height: 650px;
@@ -125,80 +170,7 @@ a {
   width: 1240px;
 }
 
-/* .desktop .element {
-  background-color: #ffffff;
-  border-radius: 6px;
-  height: 650px;
-  left: 1260px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 1240px;
-} */
 
-/* .desktop .overlap-group {
-  background-image: url('./assets/img/img-3.png');
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 650px;
-  position: relative;
-  width: 1340px;
-} */
-
-
-
-/* .desktop .p {
-  color: var(--white);
-  font-family: var(--txt-16-mplus-1p-font-family);
-  font-size: var(--txt-16-mplus-1p-font-size);
-  font-style: var(--txt-16-mplus-1p-font-style);
-  font-weight: var(--txt-16-mplus-1p-font-weight);
-  left: 50px;
-  letter-spacing: var(--txt-16-mplus-1p-letter-spacing);
-  line-height: var(--txt-16-mplus-1p-line-height);
-  position: absolute;
-  top: 511px;
-  width: 524px;
-} */
-
-/* .desktop .element-2 {
-  background-image: url('./assets/img/img-2.png');
-  background-position: 50% 50%;
-  background-size: cover;
-  border-radius: 6px;
-  height: 650px;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 1240px;
-} */
-
-
-
-/* .desktop .text-wrapper-4 {
-  color: var(--white);
-  font-family: var(--80-font-family);
-  font-size: var(--80-font-size);
-  font-style: var(--80-font-style);
-  font-weight: var(--80-font-weight);
-  left: 50px;
-  letter-spacing: var(--80-letter-spacing);
-  line-height: var(--80-line-height);
-  position: absolute;
-  top: 405px;
-  white-space: nowrap;
-} */
-
-
-
-/* .desktop .overlap {
-  background-image: url('./assets/img/img-1.png');
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 650px;
-  position: relative;
-} */
 
 .desktop .text-wrapper-5 {
   color: var(--white);
@@ -777,3 +749,56 @@ a {
   width: 42px;
 }
 
+.box {
+  height: 288px;
+  width: 1440px;
+}
+
+.box .menu-bg {
+  background-color: #0b0a0d;
+  height: 288px;
+  left: 0;
+  position: absolute;
+  top: 210px;
+  width: 1440px;
+  z-index: 1;
+}
+
+.overlay {
+  background-color: #00000066;
+  height: 2795px;
+  left: 0;
+  position: absolute;
+  top: 497px;
+  width: 1440px;
+  z-index: 1;
+}
+
+.label {
+  height: 21px;
+  width: 110px;
+}
+
+.label .text-wrapper {
+  color: #ffffff;
+  font-family: "Mplus 1p-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  left: 352px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.text-wrapper1 {
+  color: #ffffff;
+  font-family: "Mplus 1p-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  left: 352px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 92px;
+}

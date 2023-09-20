@@ -4,6 +4,7 @@ import Slider from "./Slider";
 import Faq from "./Faq";
 import News from "./News";
 import Subscribe from "./Subscribe";
+import Footer from "./Footer";
 
 
 const Main=()=>{
@@ -15,6 +16,7 @@ const Main=()=>{
                     <Faq/>
                     <News/>
                     <Subscribe/>
+                    <Footer/>
             </div>
         </div>
     );
