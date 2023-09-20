@@ -720,14 +720,17 @@ a {
   width: 27.9px !important;
 }
 
+
+
 .desktop .frame-5 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  left: 100px;
-  top: 50px;
-  padding: 10px 98px;
+align-items: flex-start;
+display: flex;
+flex-direction: column;
+gap: 10px;
+left: 100px;
+top: 50px;
+width: 400px;
+position: absolute;
 }
 
 .desktop .frame-6 {
@@ -738,6 +741,7 @@ a {
   left: 100px;
   position: absolute;
   top: 151px;
+  width: 400px;
 }
 
 .desktop .text-wrapper-21 {
@@ -1139,8 +1143,8 @@ a {
 }
 
 .desktop .text-wrapper-21 {
-  top: 76px;
-  left: -73px;
+  top: 127px;
+  left: 23px;
 }
 
 .desktop .frame-4 {
@@ -1210,6 +1214,30 @@ body.no-scroll {
 
 html, body {
   overflow-x: hidden;
+}
+
+.desktop #frame-5 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 100px;
+  top: 50px;
+  padding: 10px 98px;
+  width: 0;
+  position: initial;
+}
+
+
+.desktop #frame-6{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 100px;
+  top: 151px;
+  width: 0;
+  position: initial;
 }
 
 
